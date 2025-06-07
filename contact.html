@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We_Save_Animals</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/donate.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><img src="./static/img/logo.png" alt=""></a>
+            <ul class="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./gallary.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<br><br><br><br>
+<div class="container" style="margin: 0 auto;">
+        <div class="donation-card">
+            <div class="header">
+                <h1>Support Our Cause</h1>
+                <p>Your contribution makes a difference</p>
+            </div>
+
+            <div class="content">
+                <div class="donation-methods">
+                    <!-- Bank Transfer Section -->
+                    <div class="method-section">
+                        <h2>
+                            <span class="icon">🏦</span>
+                            Bank Transfer
+                        </h2>
+                        <div class="bank-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Bank Name:</span>
+                                <span class="detail-value">State Bank of India (Current A/C)</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Account Number:</span>
+                                <span class="detail-value" id="account-number">39339739652</span>
+                                <button class="copy-btn" onclick="copyToClipboard('account-number')">Copy</button>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">IFSC Code:</span>
+                                <span class="detail-value" id="ifsc-code">SBIN0015641</span>
+                                <button class="copy-btn" onclick="copyToClipboard('ifsc-code')">Copy</button>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Branch:</span>
+                                <span class="detail-value">Sarakki Branch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UPI Section -->
+                    <div class="method-section">
+                        <h2>
+                            <span class="icon">📱</span>
+                            UPI Payment
+                        </h2>
+                        <div class="upi-section">
+                            <p style="margin-bottom: 1rem; color: #666;">Pay instantly using any UPI app</p>
+                            <div class="upi-number" id="upi-number">9632539046</div>
+                            <br>
+                            <button class="copy-btn" onclick="copyToClipboard('upi-number')">Copy UPI Number</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note">
+                    <h3>Important Note</h3>
+                    <p>Please keep the transaction receipt for your records. Your donation helps us continue our mission and make a positive impact in the community. Thank you for your generous support!</p>
+                </div>
+
+                <div class="success-message" id="success-message">
+                    ✅ Copied to clipboard successfully!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./static/donate.js"></script>
+    <script src="./static/scripts.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>WhatsApp:</strong> +91 9632539046</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/wesaveanimalsindia/" class="social-icon instagram" title="Instagram">IG</a>
+                <a href="https://www.facebook.com/p/WSA-We-Save-Animals-100064329866728/" class="social-icon facebook" title="Facebook">FB</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
